@@ -249,6 +249,8 @@ myLogHook = return ()
 myStartupHook = do
     spawnOnce "nitrogen --restore &"
     spawnOnce "compton &"
+    spawnOnce "xbindkeys --poll-rc &"
+    spawnOnce "volnoti &"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
